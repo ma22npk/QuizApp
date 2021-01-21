@@ -16,21 +16,52 @@
   <title>Decide what not to do</title>
 </head>
 <body>
-  <div class="container">
-    <p id="question">What is A?</p>
-    <ul id="choices">
-    </ul>
-    <div class="btn disabled" id="btn">NEXT</div>
-
-    <!-- result section -->
-    <section class="hidden" id="result">
-      <p></p>
-      <!-- hrefが空白になっていることで、リプレイボタンを押すと最初の画面に戻る仕組み -->
-      <a href="">Replay?</a>
+  <!-- [START]全体を包むエリア -->
+  <div class="wrapper">
+    <!-- [START]クイズ画面左側のエリア -->
+    <section class="sectin_question">
+      <div class="container">
+        <p id="question">What is A?</p>
+        <ul id="choices">
+        </ul>
+        <div class="btn disabled" id="btn">NEXT</div>
+        <!-- result section -->
+        <section class="hidden" id="result">
+          <p></p>
+          <!-- hrefが空白になっていることで、リプレイボタンを押すと最初の画面に戻る仕組み -->
+          <a href="">Replay?</a>
+        </section>
+        <!-- /result section -->
+      </div>
     </section>
-    <!-- /result section -->
-
+    <!-- [END]クイズ画面左側のエリア -->
+    <!-- [START]クイズ画面右側のエリア -->
+    <section class="section__edit">
+      <div id="class-tab">
+        <div class="menu">
+          <a>main.js</a>
+          <a>main.js</a>
+          <a>main.js</a>
+        </div>
+      </div>
+      <div class="edit--body">
+        public class HelloWorld{<br>
+          public static void main(String[] args){<br>
+            System.out.println("Hello World!!");<br>
+          }<br>
+      }
+      </div>
+    </section>
+    <section class="section__button--wrapper">
+      <button class="quiz-btn">ヒントを見る</button>
+      <button class="quiz-btn">答えを選んでください</button>
+    </section>
+    <section class="section_consol">
+      <div class="console-body">Hello World!!</div>
+    </section>
+    <!-- [END]クイズ画面右側のエリア -->
   </div>
+  <!-- [END]inner -->
   <!-- 開発バージョン、便利なコンソールの警告が含まれています -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="js/script.js"></script>
