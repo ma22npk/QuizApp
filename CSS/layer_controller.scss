@@ -1,0 +1,101 @@
+@import "_variables";
+//  ===========================
+//全体の共通で使う値を設定するsassファイルです
+//  ===========================
+h3.section-ttl {
+  font-size: 48px;
+  color: $fontColorGold;
+  margin: 40px auto;
+  text-align: center;
+}
+// boxShadowの設定 ===========================
+$boxShadowGoogleCard: 0 2px 5px rgba(0, 0, 0, 0.26);
+$boxShadowGooglePop: 0 2px 10px rgba(0, 0, 0, .2);
+// z-depth 1(深5 ~ 1浅)
+$z-depth_box-shadow_1: 0 3px 10px 1px rgba(0, 0, 0, .48);
+// z-depth 2（カード）
+$z-depth_box-shadow_2: 0 9px 30px 3px rgba(0, 0, 0, .46);
+// z-depth 3（ボタン）
+$z-depth_box-shadow_3: 0 18px 30px 3px rgba(0, 0, 0, .46);
+// z-depth 4（ヘッダー）
+$z-depth_box-shadow_4: 0 30px 50px 5px rgba(0, 0, 0, .44);
+// z-depth 5(モーダル)
+$z-depth_box-shadow_5: 0 45px 60px 6px rgba(0, 0, 0, .44);
+
+//translateZ =======================
+// z-depth 1(深5 ~ 1浅)
+$transform_z-depth1: translateZ(10px);
+// z-depth 2（カード）
+$transform_z-depth2: translateZ(20px);
+// z-depth 3（ボタン）
+$transform_z-depth3: translateZ(30px);
+// z-depth 4（ヘッダー）
+$transform_z-depth4: translateZ(40px);
+// z-depth 5(モーダル)
+$transform_z-depth5: translateZ(50px);
+//z-indexを管理する＝＝＝＝＝＝＝＝＝＝＝
+$z-map: footer,
+btn,
+card,
+strCard,
+circleBanner,
+header,
+header-list,
+mask
+;
+
+@function getZIndex($name) {
+  @return index($z-map, $name)+100000;
+}
+
+header {
+  z-index: getZIndex(header);
+  box-shadow: $z-depth_box-shadow_4;
+  transform: $transform_z-depth4;
+}
+
+@media(max-width:670px) {
+  .header-list-items {
+    z-index: getZIndex(header-list);
+    box-shadow: $z-depth_box-shadow_5;
+    transform: $transform_z-depth5;
+
+  }
+}
+
+footer {
+  z-index: getZIndex(footer);
+  box-shadow: $z-depth_box-shadow_4;
+  transform: $transform_z-depth4;
+}
+
+.btn {
+  z-index: getZIndex(btn);
+  box-shadow: $z-depth_box-shadow_3;
+  transform: $transform_z-depth3;
+}
+
+
+
+.card {
+  z-index: getZIndex(card);
+  box-shadow: $z-depth_box-shadow_2;
+  transform: $transform_z-depth2;
+}
+
+.strCard {
+  z-index: getZIndex(strCard);
+  box-shadow: $z-depth_box-shadow_2;
+  transform: $transform_z-depth2;
+}
+
+.mask {
+  z-index: getZIndex(mask);
+  box-shadow: $z-depth_box-shadow_5;
+  transform: $transform_z-depth5;
+}
+.circle-banner {
+  z-index: getZIndex(circleBanner);
+  box-shadow: $z-depth_box-shadow_3;
+  transform: $transform_z-depth3;
+}

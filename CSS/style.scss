@@ -1,0 +1,47 @@
+//すべてのスタイルに共通する事項を取り決めるSCSSファイルです。
+@import "_variables";
+
+body {
+  background-color: $backGroundColor-Base;
+  font-family: $fontFamily-sourceChord;
+
+}
+
+a {
+  color: $fontColor-white;
+}
+h1,h2,h3,h4,h5,h6,button{
+  font-family: $fontFamily-Main;
+}
+p{
+  font-family: $fontFamily-Secondary;
+  line-height: 1.6;
+  font-size: 10px;
+}
+//内側の幅を制御するクラス
+.inner {
+  width: 647px;
+  height: 355px;
+  margin: 0 auto;
+}
+
+// タブレット時に改行させるクラス
+.br-tab {
+  display: none;
+}
+
+@media(max-width:900px) {
+  .br-tab {
+    display: block;
+  }
+}
+
+// SP時に改行させるクラス
+.br-sp{
+  display: none;
+  }
+@media(max-width:670px){
+.br-sp{
+display: block;
+}
+}

@@ -1,0 +1,39 @@
+// 色を制御する変数を定義します --------------------------------
+//背景色
+// ベースカラー 全体の70%くらいが目安
+$backGroundColor-Base:#E6B037;
+// メインカラー 全体の25%くらいが目安
+$backGroundColor-Main:#FBC03D;
+// アクセントカラー 全体の5%くらいが目安
+$backGroundColor-Accent:#F68332;
+//白
+$backGroundColor-white:#ffff;
+//黒
+$backGroundColor-black: #000;
+// コンソール画面の背景色（黒）
+$backGroundColor-black: #272823;
+// コンソール画面の背景色（灰色）
+$backGroundColor-black: #707070;
+
+// フォントカラー
+$fontColor-Primary:#070707;
+$fontColor-Secondary:#000;
+$fontColor-back:#e8bf65;
+$fontColor-white:#fff;
+$fontColor-black:#000;
+
+// フォントを制御する変数を定義します ---------------------------
+// ラノベトップ
+@font-face {
+  font-family: 'ラノベPOP';
+  src: url('LightNovelPOPv2.otf') format('opentype');
+  }
+
+// 主となるフォント
+$fontFamily-Main: "ラノベPOP";
+// 補助的なフォント
+$fontFamily-Secondary:"ラノベPOP";
+// ロゴに使うフォント
+$fontFamily-Logo:"ラノベPOP";
+// ソースコードに使うフォント
+$fontFamily-sourceChord: 'Fira Code', monospace;
