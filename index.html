@@ -3,21 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome CDN -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <!-- Googleフォントソースコード用 -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
   <!-- Style CSS -->
   <link href="CSS/style.css" rel="stylesheet">
-  <!-- Font awesome CDN -->
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <title>Document</title>
+<link href="CSS/quiz.css" rel="stylesheet">
+  <title></title>
 </head>
 <body>
-こんにちわ
-<p>こんにちは</p>
-<p>System.out.println("Hello World!!");</p>
-System.out.println("Hello World!!");
+  <div class="container">
+    <p id="question">What is A?</p>
+    <ul id="choices">
+    </ul>
+    <div class="btn disabled" id="btn">NEXT</div>
+
+    <!-- result section -->
+    <section class="hidden" id="result">
+      <p></p>
+      <!-- hrefが空白になっていることで、リプレイボタンを押すと最初の画面に戻る仕組み -->
+      <a href="">Replay?</a>
+    </section>
+    <!-- /result section -->
+
+  </div>
 <!-- 開発バージョン、便利なコンソールの警告が含まれています -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
