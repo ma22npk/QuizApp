@@ -1,4 +1,5 @@
-@import "_variables";
+//すべてのスタイルに共通する事項を取り決めるSCSSファイルです。
+@import url("_variables.scss");
 
 section.quiz {
 	aside.quiz_area_question {
