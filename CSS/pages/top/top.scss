@@ -1,5 +1,6 @@
 //すべてのスタイルに共通する事項を取り決めるSCSSファイルです。
-@import "/CSS/styles/variables";
+@import url("_variables.scss");
+
 section.top {
   display: grid;
   place-items: center;
@@ -31,7 +32,7 @@ section.top {
     div.top__wrapper {
       width: 90%;
       img.top__logo {
-        margin: 40px auto 80px;
+        margin: 30px auto 80px;
       }
     }
   }
