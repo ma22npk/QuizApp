@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'ラノベPOP';
+  src: url("LightNovelPOPv2.otf") format("opentype");
+}
+
+section.top {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+section.top div.top__wrapper {
+  width: 600px;
+  /*============================
+#top__btn-wrapper
+============================*/
+}
+
+section.top div.top__wrapper img.top__logo {
+  width: 100%;
+  margin: 0 auto 40px;
+}
+
+section.top div.top__wrapper div#top__btn-wrapper.top__btn-wrapper {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  /*============================
+#top__btn
+============================*/
+}
+
+/* スマホ用レスポンシブ======================*/
+@media (max-width: 670px) {
+  section.top div.top__wrapper {
+    width: 90%;
+  }
+  section.top div.top__wrapper img.top__logo {
+    margin: 40 auto 80px;
+  }
+}
+/*# sourceMappingURL=top.css.map */
