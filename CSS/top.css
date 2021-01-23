@@ -20,7 +20,7 @@ section.top div.top__wrapper {
 
 section.top div.top__wrapper img.top__logo {
   width: 100%;
-  margin: 0 auto 20px;
+  margin: 0 auto 40px;
 }
 
 section.top div.top__wrapper div#top__btn-wrapper.top__btn-wrapper {
@@ -30,5 +30,15 @@ section.top div.top__wrapper div#top__btn-wrapper.top__btn-wrapper {
   /*============================
 #top__btn
 ============================*/
+}
+
+/* スマホ用レスポンシブ======================*/
+@media (max-width: 670px) {
+  section.top div.top__wrapper {
+    width: 90%;
+  }
+  section.top div.top__wrapper img.top__logo {
+    margin: 40 auto 80px;
+  }
 }
 /*# sourceMappingURL=top.css.map */
