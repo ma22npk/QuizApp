@@ -1,5 +1,5 @@
 //すべてのスタイルに共通する事項を取り決めるSCSSファイルです。
-@import "_variables";
+@import "/CSS/styles/variables";
 section.top {
   display: grid;
   place-items: center;
@@ -21,9 +21,9 @@ section.top {
 #top__btn
 ============================*/
 
-			}
 		}
 	}
+}
 
 /* スマホ用レスポンシブ======================*/
 @media(max-width:670px){
@@ -31,8 +31,8 @@ section.top {
     div.top__wrapper {
       width: 90%;
       img.top__logo {
-        margin: 40 auto 80px;
-}
+        margin: 40px auto 80px;
+      }
     }
   }
 };

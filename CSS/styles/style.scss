@@ -4,7 +4,6 @@
 body {
   background-color: $backGroundColor-Base;
   font-family: $fontFamily-sourceChord;
-
 }
 
 a {
@@ -13,6 +12,14 @@ a {
 h1,h2,h3,h4,h5,h6,button{
   font-family: $fontFamily-Main;
 }
+// TOPタイトル
+h1{font-size: 64px;}
+// Menuのカテゴリータイトル
+h2{font-size: 32px;}
+// モーダルタイトル
+h3{font-size: 24px;}
+// モーダルサブタイトル, クイズ
+h4{font-size: 16px;}
 p{
   font-family: $fontFamily-Secondary;
   line-height: 1.6;
@@ -35,7 +42,6 @@ p{
     display: block;
   }
 }
-
 // SP時に改行させるクラス
 .br-sp{
   display: none;

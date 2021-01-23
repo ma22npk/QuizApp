@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'ラノベPOP';
+  src: url("LightNovelPOPv2.otf") format("opentype");
+}
+
+section.quiz aside.quiz_area_question .container {
+  width: 400px;
+  margin: 8px auto;
+  background: #fff;
+  border-radius: 4px;
+  padding: 16px;
+  position: relative;
+  /*============================
+#question
+============================*/
+  /*============================
+#choices
+============================*/
+  /*============================
+#btn
+============================*/
+  /*============================
+#result
+============================*/
+}
+
+section.quiz aside.quiz_area_question .container #question {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+section.quiz aside.quiz_area_question .container #choices > li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+section.quiz aside.quiz_area_question .container #choices > li:hover {
+  background-color: #f8f8f8;
+}
+
+section.quiz aside.quiz_area_question .container #choices > li.correct {
+  background: #d4edda;
+  font-weight: bold;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+section.quiz aside.quiz_area_question .container #choices > li.correct::after {
+  content: '...correct!';
+}
+
+section.quiz aside.quiz_area_question .container #choices > li.wrong {
+  background: #f8d8da;
+  font-weight: bold;
+  border-color: #f5c6cb;
+  color: #155724;
+}
+
+section.quiz aside.quiz_area_question .container #choices > li.wrong::after {
+  content: '...wrong!';
+}
+
+section.quiz aside.quiz_area_question .container div#btn.disabled {
+  background-color: #ccc;
+  -webkit-box-shadow: 0 4px 0 #bbb;
+          box-shadow: 0 4px 0 #bbb;
+  opacity: 0.7;
+}
+
+section.quiz div.quiz_area_main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.quiz div.quiz_area_main-wrapper div.quiz_area_edit {
+  width: 100%;
+  /*============================
+#quiz_area_edit-tab
+============================*/
+}
+
+section.quiz div.quiz_area_main-wrapper div.quiz_area_edit div#quiz_area_edit-tab {
+  margin: 0 10px 10px 0;
+}
+
+section.quiz div.quiz_area_main-wrapper div.quiz_area_edit div#quiz_area_edit-tab .menu {
+  padding-top: 10px;
+}
+
+section.quiz div.quiz_area_main-wrapper div.quiz_area_edit div#quiz_area_edit-tab .menu a {
+  padding: 10px 20px;
+  border-bottom: 1px solid #272823;
+}
+
+section.quiz div.quiz_area_main-wrapper div.quiz_area_edit div#quiz_area_edit-tab .menu .deactive {
+  background: #ffff;
+  color: #000;
+}
+
+section.quiz div.quiz_area_main-wrapper div.quiz_area_edit div#quiz_area_edit-tab .menu .active {
+  background: #272823;
+}
+
+section.quiz div.quiz_area_main-wrapper div.quiz_area_edit .quiz_area_edit-body {
+  background: #272823;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+section.quiz div.quiz_area_main-wrapper div.quiz_area_btn-wrapper {
+  width: 150px;
+  height: 98px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+section.quiz div.quiz_area_main-wrapper div.quiz_area_btn-wrapper button.quiz-btn {
+  font-size: 12px;
+  width: 140px;
+  height: 44px;
+  color: #000;
+}
+
+section.quiz div.quiz_area_main-wrapper div.quiz_area_consol {
+  background: #272823;
+  color: #fff;
+  padding: 10px 20px;
+  width: calc(100% - 160px);
+}
+/*# sourceMappingURL=quiz.css.map */
