@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Reset CSS -->
+  <link href="CSS/reset.css" rel="stylesheet">
   <!-- Font awesome CDN -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- Googleフォントソースコード用 -->
@@ -11,57 +13,59 @@
   <!-- Style CSS -->
   <link href="CSS/style.css" rel="stylesheet">
   <link href="CSS/quiz.css" rel="stylesheet">
+  <link href="CSS/modal.css" rel="stylesheet">
   <!-- ファビコン -->
   <link rel="icon" type="image/x-icon" href="images/img_icons/fav-36x36.png">
   <title>Decide what not to do</title>
 </head>
 <body>
   <!-- [START]全体を包むエリア -->
-  <div class="wrapper">
+  <section class="quiz">
     <!-- [START]クイズ画面左側のエリア -->
-    <section class="sectin_question">
+    <aside class="quiz_area_question">
       <div class="container">
         <p id="question">What is A?</p>
         <ul id="choices">
         </ul>
         <div class="btn disabled" id="btn">NEXT</div>
         <!-- result section -->
-        <section class="hidden" id="result">
+        <div class="hidden" id="result">
           <p></p>
           <!-- hrefが空白になっていることで、リプレイボタンを押すと最初の画面に戻る仕組み -->
           <a href="">Replay?</a>
-        </section>
+        </div>
         <!-- /result section -->
       </div>
-    </section>
+    </aside>
     <!-- [END]クイズ画面左側のエリア -->
     <!-- [START]クイズ画面右側のエリア -->
-    <section class="section__edit">
-      <div id="class-tab">
-        <div class="menu">
-          <a>main.js</a>
-          <a>main.js</a>
-          <a>main.js</a>
+    <div class="quiz_area_main-wrapper">
+      <div class="quiz_area_edit">
+        <div id="quiz_area_edit-tab">
+          <div class="menu">
+            <a class="deactive">main.js</a>
+            <a class="active">main.js</a>
+            <a class="deactive">main.js</a>
+          </div>
+        </div>
+        <div class="quiz_area_edit-body">
+          public class HelloWorld{<br>
+            public static void main(String[] args){<br>
+              System.out.println("Hello World!!");<br>
+            }<br>
+        }
         </div>
       </div>
-      <div class="edit--body">
-        public class HelloWorld{<br>
-          public static void main(String[] args){<br>
-            System.out.println("Hello World!!");<br>
-          }<br>
-      }
+      <div class="quiz_area_btn-wrapper">
+        <button class="quiz-btn">ヒントを見る</button>
+        <button class="quiz-btn">答えを選んでください</button>
       </div>
-    </section>
-    <section class="section__button--wrapper">
-      <button class="quiz-btn">ヒントを見る</button>
-      <button class="quiz-btn">答えを選んでください</button>
-    </section>
-    <section class="section_consol">
-      <div class="console-body">Hello World!!</div>
-    </section>
+      <div class="quiz_area_consol">
+        Hello World!!
+      </div>
+    </div>
     <!-- [END]クイズ画面右側のエリア -->
-  </div>
-  <!-- [END]inner -->
+  </section>
   <!-- 開発バージョン、便利なコンソールの警告が含まれています -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
   <script src="js/script.js"></script>
