@@ -1,0 +1,125 @@
+@import "_variables";
+
+section.quiz {
+	aside.quiz_area_question {
+		.container {
+      width: 400px;
+      margin: 8px auto;
+      background: #fff;
+      border-radius: 4px;
+      padding: 16px;
+      position: relative;
+
+/*============================
+#question
+============================*/
+#question {
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+/*============================
+#choices
+============================*/
+#choices>li {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#choices>li:hover {
+  background-color: #f8f8f8;
+}
+
+#choices>li.correct {
+  background: #d4edda;
+  font-weight: bold;
+  border-color: #c3e6cb;
+  color: #155724;
+
+  &::after {
+    content: '...correct!';
+  }
+}
+#choices>li.wrong {
+  background: #f8d8da;
+  font-weight: bold;
+  border-color: #f5c6cb;
+  color: #155724;
+
+  &::after {
+    content: '...wrong!';
+  }
+}
+
+/*============================
+#btn
+============================*/
+			div#btn.disabled {
+        background-color: #ccc;
+        box-shadow: 0 4px 0 #bbb;
+        opacity: 0.7;
+      }
+
+/*============================
+#result
+============================*/
+
+		}
+	}
+	div.quiz_area_main-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+		div.quiz_area_edit {
+      width: 100%;
+
+/*============================
+#quiz_area_edit-tab
+============================*/
+			div#quiz_area_edit-tab {
+        margin: 0 10px 10px 0;
+				.menu {
+          padding-top: 10px;
+					a {
+            padding: 10px 20px;
+            border-bottom: 1px solid $backGroundColor-console-black;
+          }
+          .deactive {
+            background: $backGroundColor-white;
+            color: $fontColor-black;
+          }
+          .active{
+            background:$backGroundColor-console-black;
+          }
+				}
+			}
+			.quiz_area_edit-body {
+        background: $backGroundColor-console-black;
+        color: $fontColor-white;
+        padding: 10px 20px;
+			}
+		}
+		div.quiz_area_btn-wrapper {
+      width: 150px;
+      height: 98px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+      align-content: space-between;
+			button.quiz-btn {
+        font-size: 12px;
+        width: 140px;
+        height: 44px;
+        color: $fontColor-black;
+			}
+		}
+		div.quiz_area_consol {
+      background: $backGroundColor-console-black;
+      color: $fontColor-white;
+      padding: 10px 20px;
+      width: calc(100% - 160px);
+		}
+	}
+}
