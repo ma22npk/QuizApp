@@ -1,0 +1,27 @@
+//すべてのスタイルに共通する事項を取り決めるSCSSファイルです。
+@import "_variables";
+section.top {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+	div.top__wrapper {
+    width: 600px;
+		img.top__logo {
+      width: 100%;
+      margin: 0 auto 20px;
+		}
+
+/*============================
+#top__btn-wrapper
+============================*/
+		div#top__btn-wrapper.top__btn-wrapper {
+      display: grid;
+      place-items: center;
+/*============================
+#top__btn
+============================*/
+			button#top__btn.btn.top__btn {
+			}
+		}
+	}
+}

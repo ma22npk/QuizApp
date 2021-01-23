@@ -1,0 +1,1 @@
+@font-face{font-family:'ラノベPOP';src:url("LightNovelPOPv2.otf") format("opentype")}section.top{display:grid;place-items:center;height:100vh}section.top div.top__wrapper{width:600px}section.top div.top__wrapper img.top__logo{width:100%;margin:0 auto 20px}section.top div.top__wrapper div#top__btn-wrapper.top__btn-wrapper{display:grid;place-items:center}
