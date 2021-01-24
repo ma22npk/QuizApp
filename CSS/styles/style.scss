@@ -1,5 +1,5 @@
 //すべてのスタイルに共通する事項を取り決めるSCSSファイルです。
-@import "_variables";
+@import url("_variables.scss");
 
 body {
   background-color: $backGroundColor-Base;
