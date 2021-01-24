@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACL,gBAAgB,EAAE,IAAI;EACtB,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,gBAAgB;EAC5B,OAAO,EAAE,SAAS;CACnB",
+    "sources": [
+        "window.scss"
+    ],
+    "names": [],
+    "file": "window.css"
+}
